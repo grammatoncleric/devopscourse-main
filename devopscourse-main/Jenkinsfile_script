@@ -13,8 +13,8 @@ pipeline {
         //}
         stage('Call Script') {
             steps {
-                sh 'chmod +x scripts/sayhello.sh'
-                sh 'scripts/sayhello.sh ${TOPIC_NAME} ${TARGET}'
+                sh 'chmod +x devopscourse-main/scripts/sayhello.sh'
+                sh 'devopscourse-main/scripts/sayhello.sh ${TOPIC_NAME} ${TARGET}'
             }
         }
     }
