@@ -10,7 +10,7 @@ pipeline {
             steps {
                 sh 'python -m py_compile devopscourse-main/pythoncode/add2vals.py devopscourse-main/pythoncode/calc.py'
                 stash(name: 'compiled-results', includes: 'devopscourse-main/pythoncode/*.py*')
-                sh 'ls -l pythoncode'
+                sh 'ls -l devopscourse-main/pythoncode'
             }
         }
         stage('Test') { 
