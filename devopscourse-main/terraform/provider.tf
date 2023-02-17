@@ -5,5 +5,4 @@ provider "aws" {
     session_name = "my-terraform-session"
     external_id  = "my-external-id"
   }
-  aws_iam_instance_profile = "DemoRoleForEC2"
 }
